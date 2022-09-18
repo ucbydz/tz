@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title></title>
+    <meta name="viewport"
+        content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+</head>
+
+<body>
+
+    <div class="ph_bg">
+
+
+    </div>
+    <script type="text/javascript">
+
+        var uri ='http://weixiao.qq.com.kxchoce.cn/mobile/bridge/index/url/'
+        var id;
+        function GetQueryString() {
+            // var reg = new RegExp("(^|&)" + name + "=([^&]*)(&|$)");
+            // var r = window.location.search.substr(1).match(reg);
+            id = window.location.search.substr(1)
+            console.log(id)
+
+        }
+
+        window.onload = function(){
+            GetQueryString();
+            window.location = uri + id
+        }
+        
+    </script>
+</body>
+
+</html>
